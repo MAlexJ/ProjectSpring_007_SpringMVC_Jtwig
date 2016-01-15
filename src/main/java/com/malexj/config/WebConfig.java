@@ -24,7 +24,11 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         JtwigViewResolver viewResolver = new JtwigViewResolver();
         viewResolver.setPrefix("/WEB-INF/views/");
         viewResolver.setSuffix(".twig");
-        viewResolver.setContentType("text/html; charset=UTF-8");
+        viewResolver.setEncoding("UTF-8");
+      //  viewResolver.configuration().render().strictMode(true);
+//        viewResolver.setViewNames("*-jtwig");
+//        viewResolver.setOrder(12);
+//        viewResolver.setContentType("text/html; charset=UTF-8");
         return viewResolver;
     }
 }

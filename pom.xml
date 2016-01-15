@@ -53,6 +53,11 @@
             <artifactId>jtwig-spring</artifactId>
             <version>${jtwig.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.lyncode</groupId>
+            <artifactId>jtwig-core</artifactId>
+            <version>${jtwig.version}</version>
+        </dependency>
 
         <!-- 2. Spring CORE: Bridge logging from JCL to SLF4j-->
         <dependency>
